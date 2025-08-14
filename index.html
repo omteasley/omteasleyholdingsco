@@ -1,0 +1,160 @@
+# omteasleyholdingsco
+website from O M Teasley
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O. M. TEASLEY Holdings</title>
+<meta name="description" content="O. M. TEASLEY Holdings - Professional investment and finance services.">
+<link rel="icon" href="/favicon.png">
+<style>
+:root {
+  --blue-primary: #0B4FA2;
+  --blue-gradient-start: #4facfe;
+  --blue-gradient-end: #00f2fe;
+  --dark-text: #0F172A;
+  --light-text: #fff;
+  --card-bg: #ffffff;
+  --radius: 20px;
+  --shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+* { box-sizing: border-box; margin:0; padding:0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+body { background: #f7f9fc; color: var(--dark-text); line-height:1.6; }
+a { text-decoration:none; color: inherit; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+section { padding: 80px 0; opacity:0; transform: translateY(30px); transition: all 0.8s ease-out; }
+section.visible { opacity:1; transform: translateY(0); }
+h1, h2, h3 { font-weight: 700; margin-bottom:16px; }
+h1 { font-size: clamp(36px,5vw,60px); }
+h2 { font-size: clamp(28px,4vw,44px); }
+p { margin-bottom:16px; }
+.button {
+  display: inline-block;
+  padding: 14px 28px;
+  font-weight: 700;
+  color: var(--light-text);
+  border-radius: 50px;
+  background: linear-gradient(90deg, var(--blue-gradient-start), var(--blue-gradient-end));
+  box-shadow: var(--shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.button:hover { transform: translateY(-2px) scale(1.05); box-shadow: 0 12px 25px rgba(0,0,0,0.25); }
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 14px 28px rgba(0,0,0,0.25); }
+.grid { display: grid; gap: 24px; }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+@media(max-width:900px){ .grid-3{grid-template-columns:1fr 1fr;} }
+@media(max-width:640px){ .grid-3,.grid-2{grid-template-columns:1fr;} }
+header { background: #fff; padding: 20px 0; position: sticky; top:0; z-index:50; box-shadow:0 2px 8px rgba(0,0,0,0.05); }
+nav { display:flex; justify-content: space-between; align-items:center; }
+nav ul { display:flex; gap:24px; list-style:none; }
+nav a { font-weight:600; color: var(--dark-text); }
+nav a:hover { color: var(--blue-primary); }
+.hero { background: linear-gradient(135deg, var(--blue-gradient-start), var(--blue-gradient-end)); color: var(--light-text); text-align:center; padding:120px 24px; border-radius: 0 0 50px 50px; }
+.hero h1 { margin-bottom:24px; }
+.hero p { font-size:1.2rem; max-width:700px; margin:0 auto 32px; }
+.section-alt { background: #f3f6fb; }
+.cards { display:grid; gap:24px; }
+footer { background: var(--blue-primary); color: #fff; text-align:center; padding:48px 24px; }
+footer a { color:#fff; }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo"><strong>O. M. TEASLEY Holdings</strong></div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#focus">Focus</a></li>
+        <li><a href="#referrals">Referrals</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="hero">
+  <div class="container">
+    <h1>O. M. TEASLEY Holdings</h1>
+    <p>Professional investment and finance services with integrity, transparency, and long-term value creation.</p>
+    <a href="#referrals" class="button">Apply Now</a>
+  </div>
+</section>
+<section id="about">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>O. M. TEASLEY Holdings is a diversified investment and management company, focusing on public and private equity, real estate, and strategic partnerships. We prioritize ethics, transparency, and long-term growth.</p>
+  </div>
+</section>
+<section id="focus" class="section-alt">
+  <div class="container">
+    <h2>Our Focus</h2>
+    <div class="grid grid-3">
+      <div class="card"><h3>Equity Investments</h3><p>Public and private markets with disciplined risk management.</p></div>
+      <div class="card"><h3>Financial Partnerships</h3><p>Referral programs and strategic collaborations with trusted institutions.</p></div>
+      <div class="card"><h3>Real Estate Holdings</h3><p>Residential and commercial assets emphasizing stable cash flow.</p></div>
+    </div>
+  </div>
+</section>
+<section id="referrals">
+  <div class="container">
+    <h2>Referral Programs</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>SoFi Invest</h3>
+        <p>Commission-free trading and mobile-first platform.</p>
+        <a href="YOUR-SOFI-REFERRAL-LINK" class="button">Apply Now</a>
+      </div>
+      <div class="card">
+        <h3>Fidelity Investments</h3>
+        <p>Robust retirement tools and broad asset access.</p>
+        <a href="YOUR-FIDELITY-REFERRAL-LINK" class="button">Apply Now</a>
+      </div>
+      <div class="card">
+        <h3>Ally Bank</h3>
+        <p>High-yield savings and intuitive online experience.</p>
+        <a href="YOUR-ALLY-REFERRAL-LINK" class="button">Apply Now</a>
+      </div>
+      <div class="card">
+        <h3>Vanguard S&P 500 ETF</h3>
+        <p>Low-cost, long-term growth ETF solution.</p>
+        <a href="YOUR-VANGUARD-REFERRAL-LINK" class="button">Apply Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="section-alt">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:contact@omteasley.com">contact@omteasley.com</a></p>
+    <p>Schedule a call: <a href="YOUR-CALENDLY-LINK" target="_blank">Book Here</a></p>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> O. M. TEASLEY Holdings. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+// Scroll animation
+const sections = document.querySelectorAll('section');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+sections.forEach(section => observer.observe(section));
+</script>
+</body>
+</html>
